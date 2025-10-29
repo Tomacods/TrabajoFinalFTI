@@ -15,6 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             localStorage.removeItem('playerName'); // Limpiar si el nombre está vacío
         }
-        window.location.href = 'game.html'; // Redirigir a la página del juego
+        window.location.href = 'html/game.html'; // Redirigir a la página del juego
     });
 });

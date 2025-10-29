@@ -293,7 +293,7 @@ class Game {
 
     handleCambiarJugador() {
         localStorage.removeItem('playerName');
-        window.location.href = 'index.html';
+        window.location.href = '../index.html';
     }
 
     // --- 6. MÉTODOS AYUDANTES (HELPERS) ---
