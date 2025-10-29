@@ -1,0 +1,214 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #111827;
+    color: #f3f4f6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.contenedor-juego {
+    max-width: 672px;
+    width: 100%;
+    background-color: #1f2937;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border: 1px solid #374151;
+}
+
+.encabezado-juego {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #374151;
+}
+
+.encabezado-juego h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #22d3ee;
+}
+
+.contenedor-puntuacion {
+    text-align: right;
+}
+
+.etiqueta-puntuacion {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    display: block;
+}
+
+.valor-puntuacion {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700;
+    color: #ffffff;
+}
+.pantalla {
+    display: none;
+}
+
+.pantalla.activa {
+    display: block;
+}
+
+.pantalla h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.pantalla p {
+    color: #d1d5db;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+.boton {
+    width: 100%;
+    font-weight: 700;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem; 
+    font-size: 1.125rem; 
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.entrada-texto + .boton-primario {
+    margin-top: 1rem;
+}
+
+.boton-primario {
+    background-color: #06b6d4;
+    color: #111827;
+}
+
+.boton-primario:hover {
+    background-color: #22d3ee;
+}
+
+.boton-secundario {
+    background-color: #374151;
+    color: #d1d5db;
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    padding: 0.5rem 1.25rem;
+}
+
+.boton-secundario:hover {
+    background-color: #4b5563;
+}
+
+.contenedor-desafio {
+    margin-bottom: 1.5rem;
+}
+
+.contenedor-desafio h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #d1d5db;
+    margin-bottom: 0.5rem;
+}
+
+.caja-consigna {
+    background-color: #374151;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+}
+
+.entrada-texto {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #111827;
+    border: 1px solid #4b5563;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.entrada-texto:focus {
+    outline: none;
+    border-color: #06b6d4;
+    box-shadow: 0 0 0 2px #06b6d4;
+}
+
+.cuadricula-opciones {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+
+.cuadricula-opciones button {
+    width: 100%;
+    text-align: left;
+    padding: 0.75rem;
+    background-color: #374151;
+    border-radius: 0.5rem;
+    border: none;
+    color: #f3f4f6;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.cuadricula-opciones button:hover {
+    background-color: #4b5563;
+}
+
+.caja-mensaje {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.125rem;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    display: none;
+}
+
+.mensaje-correcto {
+    color: #4ade80;
+}
+
+.mensaje-incorrecto {
+    color: #f87171;
+}
+
+.caja-depurador {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background-color: #111827;
+    border: 1px solid #374151;
+    border-radius: 0.375rem;
+    font-size: 0.75rem;
+    font-family: monospace;
+    color: #6b7280;
+}
+
+.caja-depurador h4 {
+    font-weight: 700;
+}
+
+.caja-depurador span {
+    font-weight: 700;
+}
+
+#debug-state {
+    color: #22d3ee;
+}
+
+#debug-stack {
+    color: #fcd34d;
+}
