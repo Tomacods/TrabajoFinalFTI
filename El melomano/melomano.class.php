@@ -16,7 +16,7 @@ class Melomano {
     public static function getNuevaTarjetaBD($excluir_ids = []) {
         $tarjeta = null;
         
-        $con = new mysqli("localhost", "root", "", "melomano_db"); 
+        $con = new mysqli("localhost", "root", "", "melomano_db", "3308"); //yo puse 3308 pq cmabie el puerto
         if ($con->connect_errno) {
             die("Error de conexión: " . $con->connect_error);
         }

@@ -18,6 +18,7 @@
         </div>
     </header>
 
+    <!-- (Estado 1) -->
     <div id="pantalla-inicio" class="pantalla activa">
         <h2>¡Bienvenido, <span id="nombre-jugador">Jugador</span>!</h2>
         <p>¿Listo para probar tu conocimiento musical? Agarra una tarjeta para empezar.</p>
@@ -29,6 +30,7 @@
         </button>
     </div>
 
+    <!-- (Estados 2 y 3) -->
     <div id="pantalla-juego" class="pantalla">
         <div id="desafio-cancion" class="contenedor-desafio">
             <h3>Desafío 1: Completa la Canción</h3>
@@ -47,6 +49,7 @@
         <div id="feedback-message" class="caja-mensaje"></div>
     </div>
 
+    <!--  (Estado 4) -->
     <div id="pantalla-puntuacion" class="pantalla">
         <h2>¡Tarjeta Completada!</h2>
         <p id="round-score-display">Sumaste X puntos en esta ronda.</p>
@@ -55,6 +58,7 @@
         </button>
     </div>
 
+    <!--  (Estado 5) -->
     <div id="pantalla-fin" class="pantalla">
         <h2>Juego Terminado</h2>
         <p id="final-score-display">Tu puntuación final es de X puntos. ¡Gracias por jugar!</p>
@@ -65,12 +69,32 @@
 
     <div id="pantalla-confirmar-fin" class="pantalla">
         <h2>¿Deseas salir?</h2>
-        <p>Puedes cambiar de jugador (esto te llevará a la pantalla de inicio) o cancelar para seguir jugando.</p>
+        
+        <div class="resumen-final">
+            <h4>Tu Resumen Final:</h4>
+            <div class="resumen-item">
+                <span>Puntaje Total:</span>
+                <strong id="final-summary-score">0</strong>
+            </div>
+            <div class="resumen-item">
+                <span>Discos Platino:</span>
+                <span id="final-summary-platino">0</span>
+            </div>
+            <div class="resumen-item">
+                <span>Discos Oro:</span>
+                <span id="final-summary-oro">0</span>
+            </div>
+            <div class="resumen-item">
+                <span>Discos Plata:</span>
+                <span id="final-summary-plata">0</span>
+            </div>
+        </div>
+
         <button id="btn-cambiar-jugador" class="boton boton-primario">
-            Cambiar de Jugador
+            Terminar juego
         </button>
         <button id="btn-cancelar-fin" class="boton boton-secundario">
-            Cancelar y Seguir Jugando
+            Seguir Jugando
         </button>
     </div>
 </div>
